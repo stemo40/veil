@@ -1,1 +1,1 @@
-# veil
+# jQuery Veil 
