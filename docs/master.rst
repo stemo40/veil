@@ -5,9 +5,9 @@ Background
 The jQuery Veil plugin was developed as an alternative to other modal window plugins, and as an update to the reveal plugin that has been deprecated. jQuery Veil has updated the basic concept and added some new features.
 
 .. NOTE:: New features list:
-   1. Set the Height of the dialog
-   2. Set the Width of the dialog
-   3. Set the source of the optional iframe
+   - Set the Height of the dialog
+   - Set the Width of the dialog
+   - Set the source of the optional iframe
    4. Set the top position of the dialog
    5. Set the left position of the dialog
    6. New 'slide' animation
