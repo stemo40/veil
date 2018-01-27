@@ -1,0 +1,116 @@
+.veil-modal-bg {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0;
+}
+.glass{
+	background: rgb(255,255,255);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 75%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(25%,rgba(0,0,0,1)), color-stop(25%,rgba(0,0,0,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(75%,rgba(0,0,0,1)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,1) 25%,rgba(255,255,255,1) 50%,rgba(0,0,0,1) 75%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,1) 25%,rgba(255,255,255,1) 50%,rgba(0,0,0,1) 75%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,1) 25%,rgba(255,255,255,1) 50%,rgba(0,0,0,1) 75%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,1) 25%,rgba(255,255,255,1) 50%,rgba(0,0,0,1) 75%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+}
+.blur{
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	filter:url(/api/blur.svg#blur);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+}
+.veil-modal-container{
+	display:none;
+	background: #fff;
+	margin: 0 auto;
+	position: fixed;
+	top: 0; left: 0; bottom: 0; right: 0;
+	z-index: 110;
+	padding:0;
+	-moz-background-clip:padding;
+	-webkit-background-clip:padding;
+	background-clip:padding-box;
+	border:12px solid rgba(0,0,0,.3);
+	-webkit-border-radius:12px;
+	-moz-border-radius:12px;
+	border-radius:12px;
+
+}
+.veil-modal-container .veil-frame{
+	padding:0;
+	margin:0;
+}
+.veil-modal-container .veil-box{
+	background:#fff;
+	padding:20px;
+}
+.veil-modal-container .veil-title{
+	background: #E4EBF1 url(/api/gloss.png) no-repeat top left;
+	font-family:"helvetica neue", arial, verdana, sans-serif;
+	height:48px;
+	line-height:48px;
+	font-size:18px;
+	font-weight:bold;
+	padding:0 15px;
+	border-bottom:1px solid #ccc;
+}
+.veil-modal-container .veil-footer{
+	height:42px;
+	line-height:42px;
+	padding:0 15px;
+	vertical-align:middle;
+	background:#eee;
+	border-top:1px solid #ccc;
+}
+.veil-footer input[type="button"]{
+	margin-top:6px
+}
+.veil-modal-container .close-veil-modal {
+	position: absolute;
+	top: -26px;
+	right: -26px;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+.close-veil-modal:before {
+	content: url(/api/close-modal.png);
+	-webkit-filter: drop-shadow(-1px 1px 2px rgba(0,0,0,0.75));
+	-moz-filter: drop-shadow(-1px 1px 2px rgba(0,0,0,0.75));
+	-ms-filter: drop-shadow(-1px 1px 2px rgba(0,0,0,0.75));
+	-o-filter: drop-shadow(-1px 1px 2px rgba(0,0,0,0.75));
+	filter: drop-shadow(-1px 1px 2px rgba(0,0,0,0.75));
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color='black', Positive='true')
+}
+.veil-modal-container .close-veil-title {
+	position: absolute;
+	right: 15px;
+	top: 12px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 0;
+	text-align:center;
+	padding:0;
+
+}
+
+.veil-modal-container .close-veil-title:before {
+	content: '\00D7';
+	font-family:arial, verdana, sans-serif;
+	font-size: 24px;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: 900;
+	color: #aaa;
+	line-height:24px;
+
+}
