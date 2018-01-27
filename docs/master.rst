@@ -29,7 +29,17 @@ Required Libraries
 Include the required javascript libraries::
 
  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
- <script src="js/milestones.js"></script>
+ <script src="js/jquery.veil.js"></script>
 
+Define the modal
+================
 
+Provide the html code for the modal window::
+
+ <div id="modal" class="veil-modal-container">
+		<img src="img/washington.jpg"/>
+		<div class="veil-footer">
+		<input type="button" value="Close" class="btn btn-default veil-close"/>
+    </div>
+ </div>
 
