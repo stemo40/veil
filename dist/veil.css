@@ -24,7 +24,7 @@
 	-o-filter: blur(5px);
 	-ms-filter: blur(5px);
 	filter: blur(5px);
-	filter:url(/api/blur.svg#blur);
+	filter:url(img/blur.svg#blur);
 	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
 }
 .veil-modal-container{
@@ -53,7 +53,7 @@
 	padding:20px;
 }
 .veil-modal-container .veil-title{
-	background: #E4EBF1 url(/api/gloss.png) no-repeat top left;
+	background: #E4EBF1 url(img/gloss.png) no-repeat top left;
 	font-family:"helvetica neue", arial, verdana, sans-serif;
 	height:48px;
 	line-height:48px;
@@ -82,7 +82,7 @@
 }
 
 .close-veil-modal:before {
-	content: url(/api/close-modal.png);
+	content: url(img/close-modal.png);
 	-webkit-filter: drop-shadow(-1px 1px 2px rgba(0,0,0,0.75));
 	-moz-filter: drop-shadow(-1px 1px 2px rgba(0,0,0,0.75));
 	-ms-filter: drop-shadow(-1px 1px 2px rgba(0,0,0,0.75));

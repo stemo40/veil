@@ -1,5 +1,5 @@
 /*
-* jQuery Veil Plugin 1.0 (works with jQuery 1.10+)
+* jQuery Veil Plugin 1.0.0 (works with jQuery 1.10+)
 *
 * This is a jQuery modal window plugin somewhat based on the Zurb jQuery Reveal Plugin 1.0
 * which is deprecated, no longer is developed or supported and does not work
@@ -109,7 +109,7 @@
 
 
 				/*----------------------------
-				Set several veriables based on
+				Set several variables based on
 				data tag or settings
 				----------------------------*/
 				if ($(this).data('veil-opacity') != undefined) {
@@ -182,7 +182,7 @@
 				}else {
 					var blurID = settings.blurid;
 				}
-
+console.log(blurID);
 				/*---------------------------
 				Entrance Animations
 				----------------------------*/
