@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+	<title>Veil jQuery Plugin</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="veil.css">
+	<style>
+		body{background:#4F6497}
+		.container{background:#fff;padding:15px 45px}
+	</style>
+</head>
+<body><br><br><br>
+	<div class="container" id="blurme">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Veil jQuery Plugin</h1>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+
+				<a href="#" data-veil-id="m1Modal" class="veil btn btn-default" data-veil-animationspeed="150" data-veil-closeonbgclick="false" data-veil-animation="pop" data-veil-closeclass="close-veil" data-veil-title="Information" data-veil-opacity="40" id="mw1">Image with Blur</a> <a href="#" data-veil-id="m2Modal" class="veil btn btn-primary" data-veil-animationspeed="250" data-veil-closeonbgclick="true" data-veil-animation="slide" data-veil-closeclass="close-veil" data-veil-title="Some Title" data-veil-opacity="40" id="mw2">Text no Blur</a>
+				<br>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Some Text</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Semper risus in hendrerit gravida rutrum quisque. In nisl nisi scelerisque eu. Senectus et netus et malesuada fames. Vehicula ipsum a arcu cursus vitae congue mauris. Nunc sed id semper risus in.<br><br> Arcu dictum varius duis at consectetur. Mauris a diam maecenas sed enim ut sem viverra. Mollis nunc sed id semper risus. Tempus egestas sed sed risus pretium quam vulputate. Volutpat sed cras ornare arcu dui vivamus. In vitae turpis massa sed elementum tempus egestas. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Elementum tempus egestas sed sed risus pretium quam vulputate.<br><br> Diam vel quam elementum pulvinar. Volutpat diam ut venenatis tellus. Vitae purus faucibus ornare suspendisse sed nisi lacus. Nulla at volutpat diam ut venenatis. Arcu dictum varius duis at consectetur lorem donec massa.<br><br>
+				Purus ut faucibus pulvinar elementum. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Erat velit scelerisque in dictum non consectetur. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Vel eros donec ac odio. Non arcu risus quis varius quam quisque id diam.<br><br> Amet massa vitae tortor condimentum lacinia. Ac turpis egestas integer eget aliquet nibh praesent tristique magna. Pharetra massa massa ultricies mi quis hendrerit dolor. Arcu cursus euismod quis viverra nibh cras pulvinar. Ullamcorper sit amet risus nullam eget felis eget. Pharetra sit amet aliquam id diam maecenas. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Nunc sed velit dignissim sodales ut.<br><br>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="jquery.veil.js"></script>
+	<script>
+		$(function(){
+			$('#mw1').veil({
+				width:644,
+				height:548,
+				bgcolor:'#000',
+				blurid:'#blurme',
+			});
+			$('#mw2').veil();
+		});
+
+	</script>
+	<div id="m1Modal" class="veil-modal-container">
+		<img src="img/washington.jpg"/>
+		<div class="veil-footer"><input type="button" value="Close" class="btn btn-default veil-close"/></div>
+	</div>
+	<div id="m2Modal" class="veil-modal-container">
+		<div style="padding:15px">
+			<h3>Test Modal</h3>
+			Diam vel quam elementum pulvinar. Volutpat diam ut venenatis tellus. Vitae purus faucibus ornare suspendisse sed nisi lacus. Nulla at volutpat diam ut venenatis. Arcu dictum varius duis at consectetur lorem donec massa. Erat velit scelerisque in dictum non consectetur. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Vel eros donec ac odio. Non arcu risus quis varius quam quisque id diam.
+		</div>
+	</div>
+
+</body>
+</html>
