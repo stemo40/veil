@@ -182,7 +182,7 @@
 				}else {
 					var blurID = settings.blurid;
 				}
-console.log(blurID);
+
 				/*---------------------------
 				Entrance Animations
 				----------------------------*/
