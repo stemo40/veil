@@ -118,9 +118,7 @@ html_theme_options = {
 html_sidebars = {
     '**': [
         'index.html',  
-        'reademe.html',
-        'test_file.html',
-        'new_file.html',
+        'license.html',
     ]
 }
 
@@ -155,7 +153,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'veil.tex', 'veil Documentation',
+    (master_doc, 'veil.tex', 'Veil Documentation',
      'Steve Morgan', 'manual'),
 ]
 
@@ -165,7 +163,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'veil', 'veil Documentation',
+    (master_doc, 'veil', 'Veil Documentation',
      [author], 1)
 ]
 
@@ -176,7 +174,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'veil', 'veil Documentation',
+    (master_doc, 'veil', 'Veil Documentation',
      author, 'veil', 'One line description of project.',
      'Miscellaneous'),
 ]
